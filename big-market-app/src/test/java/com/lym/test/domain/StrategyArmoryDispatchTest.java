@@ -1,6 +1,6 @@
 package com.lym.test.domain;
 
-import com.lym.domain.strategy.service.armory.StrategyArmory;
+import com.lym.domain.strategy.service.armory.StrategyArmoryDispatch;
 import lombok.extern.slf4j.Slf4j;
 
 import org.junit.runner.RunWith;
@@ -13,20 +13,18 @@ import javax.annotation.Resource;
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class StrategyArmoryTest {
+public class StrategyArmoryDispatchTest {
 
     @Resource
-    private StrategyArmory strategyArmory;
+    private StrategyArmoryDispatch strategyArmoryDispatch;
 
     @Test
     public void test() {
-        strategyArmory.assembleLotteryStrategy(100002L);
+        strategyArmoryDispatch.assembleLotteryStrategy(100001L);
     }
 
     @Test
     public void test2() {
-        log.info("奖品值id:{}", strategyArmory.getRandomAwardId(100002L));
-        log.info("奖品值id:{}", strategyArmory.getRandomAwardId(100002L));
-        log.info("奖品值id:{}", strategyArmory.getRandomAwardId(100002L));
+        log.info("奖品值id:{}", strategyArmoryDispatch.getRandomAwardId(100001L, "5000:102,103,104,105,106,107"));
     }
 }
