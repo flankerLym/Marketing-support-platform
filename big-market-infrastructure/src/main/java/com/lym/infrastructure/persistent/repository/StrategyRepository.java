@@ -3,6 +3,7 @@ package com.lym.infrastructure.persistent.repository;
 import com.lym.domain.strategy.model.entity.StrategyAwardEntity;
 import com.lym.domain.strategy.model.entity.StrategyEntity;
 import com.lym.domain.strategy.model.entity.StrategyRuleEntity;
+import com.lym.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 import com.lym.domain.strategy.repository.IStrategyRepository;
 import com.lym.infrastructure.persistent.dao.IStrategyAwardDao;
 import com.lym.infrastructure.persistent.dao.IStrategyDao;
@@ -124,6 +125,14 @@ public class StrategyRepository implements IStrategyRepository {
         return strategyRuleDao.queryStrategyRuleValue(strategyRule);
     }
 
+    @Override
+    public StrategyAwardRuleModelVO queryStrategyAwardRuleValue(Long strategyId, Integer awardId) {
+        StrategyAward strategyAward = new StrategyAward();
+        strategyAward.setStrategyId(strategyId);
+        strategyAward.setAwardId(awardId);
+        String ruleModels = strategyAwardDao.queryStrategyAwardRuleModels(strategyAward);
+        return StrategyAwardRuleModelVO.builder().ruleModels(ruleModels).build();
+    }
 
 }
 

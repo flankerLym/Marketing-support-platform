@@ -3,8 +3,8 @@ package com.lym.domain.strategy.repository;
 import com.lym.domain.strategy.model.entity.StrategyAwardEntity;
 import com.lym.domain.strategy.model.entity.StrategyEntity;
 import com.lym.domain.strategy.model.entity.StrategyRuleEntity;
+import com.lym.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
 
-import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -32,5 +32,6 @@ public interface IStrategyRepository {
     String queryStrategyRuleValue(Long strategyId, Integer awardId, String ruleModel);
 
 
+    StrategyAwardRuleModelVO queryStrategyAwardRuleValue(Long strategyId,Integer awardId);
 }
 

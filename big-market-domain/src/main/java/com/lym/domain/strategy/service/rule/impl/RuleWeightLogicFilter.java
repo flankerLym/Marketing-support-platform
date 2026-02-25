@@ -2,7 +2,7 @@ package com.lym.domain.strategy.service.rule.impl;
 
 import com.lym.domain.strategy.model.entity.RuleActionEntity;
 import com.lym.domain.strategy.model.entity.RuleMatterEntity;
-import com.lym.domain.strategy.model.vo.RuleLogicCheckTypeVO;
+import com.lym.domain.strategy.model.valobj.RuleLogicCheckTypeVO;
 import com.lym.domain.strategy.repository.IStrategyRepository;
 import com.lym.domain.strategy.service.annotation.LogicStrategy;
 import com.lym.domain.strategy.service.rule.ILogicFilter;
