@@ -1,6 +1,6 @@
 package com.lym.domain.strategy.model.valobj;
 
-import com.lym.domain.strategy.service.rule.factory.DefaultLogicFactory;
+import com.lym.domain.strategy.service.rule.filter.factory.DefaultLogicFactory;
 import com.lym.types.common.Constants;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
