@@ -12,7 +12,9 @@ public class DefaultChainFactory {
 
     private final Map<String, ILogicChain> logicChainGroup;
     protected IStrategyRepository repository;
-
+    /*
+    构造方法所有实现接口的bean以键值对能注入 Map
+     */
     public DefaultChainFactory(Map<String, ILogicChain> logicChainGroup, IStrategyRepository repository) {
         this.logicChainGroup = logicChainGroup;
         this.repository = repository;
