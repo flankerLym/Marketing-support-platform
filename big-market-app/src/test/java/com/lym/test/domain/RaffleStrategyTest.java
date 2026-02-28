@@ -3,10 +3,9 @@ package com.lym.test.domain;
 import com.alibaba.fastjson.JSON;
 import com.lym.domain.strategy.model.entity.RaffleAwardEntity;
 import com.lym.domain.strategy.model.entity.RaffleFactorEntity;
-import com.lym.domain.strategy.service.armory.IStrategyArmory;
 import com.lym.domain.strategy.service.IRaffleStrategy;
-import com.lym.domain.strategy.service.rule.filter.impl.RuleLockLogicFilter;
-import com.lym.domain.strategy.service.rule.filter.impl.RuleWeightLogicFilter;
+import com.lym.domain.strategy.service.armory.IStrategyArmory;
+import com.lym.domain.strategy.service.rule.chain.impl.RuleWeightLogicChain;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,26 +26,23 @@ public class RaffleStrategyTest {
     @Resource
     private IRaffleStrategy raffleStrategy;
     @Resource
-    private RuleWeightLogicFilter ruleWeightLogicFilter;
-    @Resource
-    private RuleLockLogicFilter ruleLockLogicFilter;
+    private RuleWeightLogicChain ruleWeightLogicChain;
 
     @Before
     public void setUp() {
         // 策略装配 100001、100002、100003
-//        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100001L));
-//        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100003L));
+        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100001L));
+        log.info("测试结果：{}", strategyArmory.assembleLotteryStrategy(100006L));
 
         // 通过反射 mock 规则中的值
-        ReflectionTestUtils.setField(ruleWeightLogicFilter, "userScore", 40500L);
-        ReflectionTestUtils.setField(ruleLockLogicFilter, "userRaffleCount", 0L);
+        ReflectionTestUtils.setField(ruleWeightLogicChain, "userScore", 4900L);
     }
 
     @Test
     public void test_performRaffle() {
         RaffleFactorEntity raffleFactorEntity = RaffleFactorEntity.builder()
                 .userId("xiaofuge")
-                .strategyId(100001L)
+                .strategyId(100006L)
                 .build();
 
         RaffleAwardEntity raffleAwardEntity = raffleStrategy.performRaffle(raffleFactorEntity);
