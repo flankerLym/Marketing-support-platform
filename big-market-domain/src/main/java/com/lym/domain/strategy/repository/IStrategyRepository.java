@@ -5,6 +5,7 @@ import com.lym.domain.strategy.model.entity.StrategyEntity;
 import com.lym.domain.strategy.model.entity.StrategyRuleEntity;
 import com.lym.domain.strategy.model.valobj.RuleTreeVO;
 import com.lym.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import com.lym.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 
 import java.util.List;
 import java.util.Map;
@@ -39,5 +40,14 @@ public interface IStrategyRepository {
 
     RuleTreeVO queryRuleTreeVOByTreeId(String treeId);
 
+    void cacheStrategyAwardCount(String cacheKey, Integer awardCount);
+
+    Boolean subtractionAwardStock(String cacheKey);
+
+    void awardStockConsumeSendQueue(StrategyAwardStockKeyVO strategyAwardStockKeyVO);
+
+    StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException;
+
+    void updateStrategyAwardStock(Long strategyId, Integer awardId);
 }
 

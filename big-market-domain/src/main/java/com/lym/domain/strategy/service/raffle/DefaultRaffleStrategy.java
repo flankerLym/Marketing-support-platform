@@ -2,6 +2,7 @@ package com.lym.domain.strategy.service.raffle;
 
 import com.lym.domain.strategy.model.valobj.RuleTreeVO;
 import com.lym.domain.strategy.model.valobj.StrategyAwardRuleModelVO;
+import com.lym.domain.strategy.model.valobj.StrategyAwardStockKeyVO;
 import com.lym.domain.strategy.repository.IStrategyRepository;
 import com.lym.domain.strategy.service.AbstractRaffleStrategy;
 import com.lym.domain.strategy.service.armory.IStrategyDispatch;
@@ -41,5 +42,14 @@ public class DefaultRaffleStrategy extends AbstractRaffleStrategy {
     }
 
 
+    @Override
+    public StrategyAwardStockKeyVO takeQueueValue() throws InterruptedException {
+        return repository.takeQueueValue();
+    }
+
+    @Override
+    public void updateStrategyAwardStock(Long strategyId, Integer awardId) {
+        repository.updateStrategyAwardStock(strategyId, awardId);
+    }
 
 }
