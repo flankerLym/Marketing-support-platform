@@ -27,5 +27,7 @@ public class RaffleAwardEntity {
     /** 奖品内容描述 */
     private String awardDesc;
 
+    private Integer sort;
+
 }
 

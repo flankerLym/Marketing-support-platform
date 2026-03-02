@@ -44,6 +44,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
 
             // 获取下个节点
             nextNode = nextNode(ruleLogicCheckTypeVO.getCode(), ruleTreeNode.getTreeNodeLineVOList());
+            if (null == nextNode) break;
             ruleTreeNode = treeNodeMap.get(nextNode);
         }
 
@@ -58,7 +59,7 @@ public class DecisionTreeEngine implements IDecisionTreeEngine {
                 return nodeLine.getRuleNodeTo();
             }
         }
-        throw new RuntimeException("决策树引擎，nextNode 计算失败，未找到可执行节点！");
+        return null;
     }
 
 
