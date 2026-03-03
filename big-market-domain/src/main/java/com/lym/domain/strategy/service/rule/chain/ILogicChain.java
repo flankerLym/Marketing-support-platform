@@ -7,7 +7,7 @@ import com.lym.domain.strategy.service.rule.chain.factory.DefaultChainFactory;
  * @description 责任链接口
  * @create 2026-02-25 17:21
  */
-public interface ILogicChain extends ILogicChainArmory{
+public interface ILogicChain extends ILogicChainArmory, Cloneable{
 
     /**
      * 责任链接口
