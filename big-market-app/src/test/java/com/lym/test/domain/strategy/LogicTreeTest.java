@@ -1,4 +1,4 @@
-package com.lym.test.domain;
+package com.lym.test.domain.strategy;
 
 import com.alibaba.fastjson.JSON;
 import com.lym.domain.strategy.model.valobj.*;

@@ -1,4 +1,4 @@
-package com.lym.test.domain;
+package com.lym.test.domain.strategy;
 
 import com.lym.domain.strategy.service.armory.StrategyArmoryDispatch;
 import lombok.extern.slf4j.Slf4j;
