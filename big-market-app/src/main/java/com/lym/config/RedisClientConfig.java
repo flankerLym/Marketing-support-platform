@@ -41,6 +41,7 @@ public class RedisClientConfig {
                 .setConnectionMinimumIdleSize(properties.getMinIdleSize())
                 .setIdleConnectionTimeout(properties.getIdleTimeout())
                 .setConnectTimeout(properties.getConnectTimeout())
+                .setTimeout(properties.getTimeout())
                 .setRetryAttempts(properties.getRetryAttempts())
                 .setRetryInterval(properties.getRetryInterval())
                 .setPingConnectionInterval(properties.getPingInterval())
