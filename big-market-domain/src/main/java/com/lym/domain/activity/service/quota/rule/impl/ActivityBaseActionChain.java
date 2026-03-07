@@ -1,11 +1,11 @@
-package com.lym.domain.activity.service.rule.impl;
+package com.lym.domain.activity.service.quota.rule.impl;
 
 
 import com.lym.domain.activity.model.entity.ActivityCountEntity;
 import com.lym.domain.activity.model.entity.ActivityEntity;
 import com.lym.domain.activity.model.entity.ActivitySkuEntity;
 import com.lym.domain.activity.model.valobj.ActivityStateVO;
-import com.lym.domain.activity.service.rule.AbstractActionChain;
+import com.lym.domain.activity.service.quota.rule.AbstractActionChain;
 import com.lym.types.enums.ResponseCode;
 import com.lym.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;

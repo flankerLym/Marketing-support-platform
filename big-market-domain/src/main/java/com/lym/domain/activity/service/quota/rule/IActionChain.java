@@ -1,4 +1,4 @@
-package com.lym.domain.activity.service.rule;
+package com.lym.domain.activity.service.quota.rule;
 
 
 import com.lym.domain.activity.model.entity.ActivityCountEntity;

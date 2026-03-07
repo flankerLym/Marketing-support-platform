@@ -1,4 +1,4 @@
-package com.lym.domain.activity.service;
+package com.lym.domain.activity.service.quota;
 
 
 import com.lym.domain.activity.model.aggregate.CreateOrderAggregate;
@@ -6,8 +6,9 @@ import com.lym.domain.activity.model.entity.ActivityCountEntity;
 import com.lym.domain.activity.model.entity.ActivityEntity;
 import com.lym.domain.activity.model.entity.ActivitySkuEntity;
 import com.lym.domain.activity.repository.IActivityRepository;
-import com.lym.domain.activity.service.rule.IActionChain;
-import com.lym.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.lym.domain.activity.service.IRaffleActivityAccountQuotaService;
+import com.lym.domain.activity.service.quota.rule.IActionChain;
+import com.lym.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import com.lym.types.enums.ResponseCode;
 import com.lym.types.exception.AppException;
 import lombok.extern.slf4j.Slf4j;
@@ -19,9 +20,9 @@ import org.apache.commons.lang3.StringUtils;
  * @create 2024-03-16 08:42
  */
 @Slf4j
-public abstract class AbstractRaffleActivity extends RaffleActivitySupport implements IRaffleOrder {
+public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityAccountQuotaSupport implements IRaffleActivityAccountQuotaService {
 
-    public AbstractRaffleActivity(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public AbstractRaffleActivityAccountQuota(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         super(activityRepository, defaultActivityChainFactory);
     }
 

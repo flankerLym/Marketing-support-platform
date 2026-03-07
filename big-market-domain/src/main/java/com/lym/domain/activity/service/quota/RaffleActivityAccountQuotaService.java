@@ -1,4 +1,4 @@
-package com.lym.domain.activity.service;
+package com.lym.domain.activity.service.quota;
 
 import com.lym.domain.activity.model.aggregate.CreateOrderAggregate;
 import com.lym.domain.activity.model.entity.ActivityCountEntity;
@@ -8,7 +8,8 @@ import com.lym.domain.activity.model.entity.ActivitySkuEntity;
 import com.lym.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.lym.domain.activity.model.valobj.OrderStateVO;
 import com.lym.domain.activity.repository.IActivityRepository;
-import com.lym.domain.activity.service.rule.factory.DefaultActivityChainFactory;
+import com.lym.domain.activity.service.IRaffleActivitySkuStockService;
+import com.lym.domain.activity.service.quota.rule.factory.DefaultActivityChainFactory;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.springframework.stereotype.Service;
 
@@ -20,9 +21,9 @@ import java.util.Date;
  * @create 2024-03-16 08:41
  */
 @Service
-public class RaffleActivityService extends AbstractRaffleActivity implements ISkuStock {
+public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAccountQuota implements IRaffleActivitySkuStockService {
 
-    public RaffleActivityService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
+    public RaffleActivityAccountQuotaService(IActivityRepository activityRepository, DefaultActivityChainFactory defaultActivityChainFactory) {
         super(activityRepository, defaultActivityChainFactory);
     }
 

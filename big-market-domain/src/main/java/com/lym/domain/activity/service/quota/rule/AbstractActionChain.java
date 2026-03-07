@@ -1,4 +1,4 @@
-package com.lym.domain.activity.service.rule;
+package com.lym.domain.activity.service.quota.rule;
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥

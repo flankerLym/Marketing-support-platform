@@ -1,6 +1,5 @@
 package com.lym.infrastructure.persistent.dao;
 
-
 import com.lym.infrastructure.persistent.po.Strategy;
 import org.apache.ibatis.annotations.Mapper;
 
