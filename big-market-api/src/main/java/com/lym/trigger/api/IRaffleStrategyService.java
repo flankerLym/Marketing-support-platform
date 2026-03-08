@@ -2,13 +2,13 @@ package com.lym.trigger.api;
 
 import com.lym.trigger.api.dto.RaffleAwardListRequestDTO;
 import com.lym.trigger.api.dto.RaffleAwardListResponseDTO;
-import com.lym.trigger.api.dto.RaffleRequestDTO;
-import com.lym.trigger.api.dto.RaffleResponseDTO;
+import com.lym.trigger.api.dto.RaffleStrategyRequestDTO;
+import com.lym.trigger.api.dto.RaffleStrategyResponseDTO;
 import com.lym.types.model.Response;
 
 import java.util.List;
 
-public interface IRaffleService {
+public interface IRaffleStrategyService {
     /**
      * 策略装配接口
      *
@@ -31,6 +31,6 @@ public interface IRaffleService {
      * @param requestDTO 请求参数
      * @return 抽奖结果
      */
-    Response<RaffleResponseDTO> randomRaffle(RaffleRequestDTO requestDTO);
+    Response<RaffleStrategyResponseDTO> randomRaffle(RaffleStrategyRequestDTO requestDTO);
 
 }
