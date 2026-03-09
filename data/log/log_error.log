@@ -166,7 +166,7 @@ Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server respo
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	... 1 common frames omitted
 26-03-02.13:31:09.795 [HikariPool-1 housekeeper] WARN  HikariPool             - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17h7m14s68ms688µs600ns).
-26-03-02.13:54:31.760 [http-nio-8091-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<java.util.List<com.lym.trigger.api.dto.RaffleAwardListResponseDTO>> com.lym.trigger.http.IRaffleStrategyController.queryRaffleAwardList(com.lym.trigger.api.dto.RaffleAwardListRequestDTO)]
+26-03-02.13:54:31.760 [http-nio-8091-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<java.util.List<com.lym.trigger.api.dto.RaffleAwardListResponseDTO>> com.lym.trigger.http.RaffleStrategyController.queryRaffleAwardList(com.lym.trigger.api.dto.RaffleAwardListRequestDTO)]
 26-03-02.14:00:00.360 [http-nio-8091-exec-9] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------509920938286093753576664;charset=UTF-8' not supported]
 26-03-02.14:00:45.975 [http-nio-8091-exec-10] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content type 'multipart/form-data;boundary=--------------------------486607982122962775226917;charset=UTF-8' not supported]
 26-03-02.14:01:10.570 [http-nio-8091-exec-11] ERROR IRaffleController      - 随机抽奖失败 strategyId：100006
@@ -175,7 +175,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -236,7 +236,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -297,7 +297,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -359,7 +359,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -421,7 +421,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -483,7 +483,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -544,7 +544,7 @@ java.lang.NullPointerException: null
 	at com.lym.domain.strategy.service.rule.tree.factory.engine.impl.DecisionTreeEngine.process(DecisionTreeEngine.java:46)
 	at com.lym.domain.strategy.service.raffle.DefaultRaffleStrategy.raffleLogicTree(DefaultRaffleStrategy.java:46)
 	at com.lym.domain.strategy.service.AbstractRaffleStrategy.performRaffle(AbstractRaffleStrategy.java:55)
-	at com.lym.trigger.http.IRaffleStrategyController.randomRaffle(IRaffleController.java:120)
+	at com.lym.trigger.http.RaffleStrategyController.randomRaffle(IRaffleController.java:120)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

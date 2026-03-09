@@ -1,4 +1,6 @@
 package com.lym.test.domain.activity;
+
+
 import com.alibaba.fastjson.JSON;
 import com.lym.domain.activity.model.entity.PartakeRaffleActivityEntity;
 import com.lym.domain.activity.model.entity.UserRaffleOrderEntity;

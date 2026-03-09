@@ -1,6 +1,5 @@
 package com.lym.test.infrastructure;
 
-
 import com.alibaba.fastjson2.JSON;
 import com.lym.domain.strategy.model.valobj.RuleTreeVO;
 import com.lym.domain.strategy.model.valobj.StrategyAwardStockKeyVO;

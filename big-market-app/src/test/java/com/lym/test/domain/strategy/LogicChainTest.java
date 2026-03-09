@@ -1,5 +1,6 @@
 package com.lym.test.domain.strategy;
 
+
 import com.alibaba.fastjson.JSON;
 import com.lym.domain.strategy.service.armory.IStrategyArmory;
 import com.lym.domain.strategy.service.rule.chain.ILogicChain;
@@ -15,6 +16,11 @@ import org.springframework.test.util.ReflectionTestUtils;
 
 import javax.annotation.Resource;
 
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 抽奖责任链测试，验证不同的规则走不同的责任链
+ * @create 2024-01-20 11:20
+ */
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest

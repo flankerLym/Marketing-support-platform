@@ -1,10 +1,11 @@
 package com.lym.test.domain.award;
 
+
 import com.lym.domain.award.model.entity.UserAwardRecordEntity;
 import com.lym.domain.award.model.valobj.AwardStateVO;
 import com.lym.domain.award.service.IAwardService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.RandomStringUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,6 +15,11 @@ import javax.annotation.Resource;
 import java.util.Date;
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 奖品服务测试
+ * @create 2024-04-06 11:27
+ */
 @Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest

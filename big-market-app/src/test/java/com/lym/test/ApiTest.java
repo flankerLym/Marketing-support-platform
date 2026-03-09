@@ -1,33 +1,37 @@
 package com.lym.test;
 
-import com.lym.infrastructure.persistent.redis.IRedisService;
+
+import com.alibaba.fastjson2.JSON;
+import com.lym.trigger.api.dto.RaffleAwardListRequestDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.redisson.api.RMap;
-import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.annotation.Resource;
-
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 功能测试
+ * @create 2023-12-23 11:39
+ */
 @Slf4j
-@RunWith(SpringRunner.class)
-@SpringBootTest
+//@RunWith(SpringRunner.class)
+//@SpringBootTest
 public class ApiTest {
 
-    @Resource
-    private IRedisService redisService;
     @Test
     public void test() {
+        RaffleAwardListRequestDTO requestDTO = new RaffleAwardListRequestDTO();
+        requestDTO.setUserId("xiaofuge");
+        requestDTO.setActivityId(100301L);
+        log.info(JSON.toJSONString(requestDTO));
+    }
 
-        RMap<Object, Object> map = redisService.getMap("strategy_id_100001");
-        map.put("1", "101");
-        map.put("2", "102");
-        map.put("3", "103");
-        map.put("4", "104");
-        map.put("5", "105");
-        map.put("6", "106");
-        log.info("测试结果:{}", redisService.getFromMap("strategy_id_100001", "1"));
+    private double convert(double min){
+        double current = min;
+        double max = 1;
+        while (current < 1){
+            current = current * 10;
+            max = max * 10;
+        }
+        return max;
     }
 
 }

@@ -1,6 +1,5 @@
 package com.lym.test.infrastructure;
 
-
 import com.alibaba.fastjson.JSON;
 import com.lym.infrastructure.persistent.dao.IRaffleActivityOrderDao;
 import com.lym.infrastructure.persistent.po.RaffleActivityOrder;
@@ -33,7 +32,7 @@ public class RaffleActivityOrderDaoTest {
 
     @Test
     public void test_insert_random() {
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 5; i++) {
             RaffleActivityOrder raffleActivityOrder = new RaffleActivityOrder();
             // EasyRandom 可以通过指定对象类的方式，随机生成对象值。如；easyRandom.nextObject(String.class)、easyRandom.nextObject(RaffleActivityOrder.class)
             raffleActivityOrder.setUserId(easyRandom.nextObject(String.class));
