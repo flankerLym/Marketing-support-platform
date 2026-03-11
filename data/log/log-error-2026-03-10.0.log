@@ -1,0 +1,213 @@
+26-03-10.22:23:10.122 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33bf28c (Communications link failure
+
+The last packet successfully received from the server was 1,718,242 milliseconds ago. The last packet sent successfully to the server was 1,718,561 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.165 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@529d4736 (Communications link failure
+
+The last packet successfully received from the server was 1,718,244 milliseconds ago. The last packet sent successfully to the server was 1,718,294 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.210 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7bec7349 (Communications link failure
+
+The last packet successfully received from the server was 1,763,499 milliseconds ago. The last packet sent successfully to the server was 1,763,546 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.264 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@571fd9d2 (Communications link failure
+
+The last packet successfully received from the server was 1,761,190 milliseconds ago. The last packet sent successfully to the server was 1,761,235 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.314 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b6cfe2f (Communications link failure
+
+The last packet successfully received from the server was 1,759,895 milliseconds ago. The last packet sent successfully to the server was 1,759,941 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.364 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3370ac83 (Communications link failure
+
+The last packet successfully received from the server was 1,758,403 milliseconds ago. The last packet sent successfully to the server was 1,758,450 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.415 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b9ef79f (Communications link failure
+
+The last packet successfully received from the server was 1,757,701 milliseconds ago. The last packet sent successfully to the server was 1,757,749 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.472 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2666a77 (Communications link failure
+
+The last packet successfully received from the server was 1,755,404 milliseconds ago. The last packet sent successfully to the server was 1,755,454 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.526 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e977192 (Communications link failure
+
+The last packet successfully received from the server was 1,754,185 milliseconds ago. The last packet sent successfully to the server was 1,754,232 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.571 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@58b5dc77 (Communications link failure
+
+The last packet successfully received from the server was 1,753,169 milliseconds ago. The last packet sent successfully to the server was 1,753,214 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.110 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ed70ac6 (Communications link failure
+
+The last packet successfully received from the server was 1,787,855 milliseconds ago. The last packet sent successfully to the server was 1,787,902 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.151 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@127ba5bd (Communications link failure
+
+The last packet successfully received from the server was 1,773,499 milliseconds ago. The last packet sent successfully to the server was 1,773,817 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.200 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@200370fb (Communications link failure
+
+The last packet successfully received from the server was 1,773,080 milliseconds ago. The last packet sent successfully to the server was 1,773,124 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.254 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@602da86a (Communications link failure
+
+The last packet successfully received from the server was 1,772,065 milliseconds ago. The last packet sent successfully to the server was 1,772,696 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.303 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@662a0f93 (Communications link failure
+
+The last packet successfully received from the server was 1,769,784 milliseconds ago. The last packet sent successfully to the server was 1,769,831 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.110 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@584fa64c (Communications link failure
+
+The last packet successfully received from the server was 1,354,334 milliseconds ago. The last packet sent successfully to the server was 1,354,387 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.164 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@215d7e62 (Communications link failure
+
+The last packet successfully received from the server was 1,348,568 milliseconds ago. The last packet sent successfully to the server was 1,348,610 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.215 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7946572d (Communications link failure
+
+The last packet successfully received from the server was 1,348,092 milliseconds ago. The last packet sent successfully to the server was 1,348,144 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.257 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a2607a8 (Communications link failure
+
+The last packet successfully received from the server was 1,347,331 milliseconds ago. The last packet sent successfully to the server was 1,347,387 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.313 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f7ea566 (Communications link failure
+
+The last packet successfully received from the server was 1,344,695 milliseconds ago. The last packet sent successfully to the server was 1,344,746 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.364 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@259a7885 (Communications link failure
+
+The last packet successfully received from the server was 1,344,207 milliseconds ago. The last packet sent successfully to the server was 1,344,260 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.418 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e2eac24 (Communications link failure
+
+The last packet successfully received from the server was 1,343,717 milliseconds ago. The last packet sent successfully to the server was 1,343,773 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.461 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14cfed0e (Communications link failure
+
+The last packet successfully received from the server was 1,343,336 milliseconds ago. The last packet sent successfully to the server was 1,343,378 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.517 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e802f64 (Communications link failure
+
+The last packet successfully received from the server was 1,342,954 milliseconds ago. The last packet sent successfully to the server was 1,342,996 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.559 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78a82061 (Communications link failure
+
+The last packet successfully received from the server was 1,342,452 milliseconds ago. The last packet sent successfully to the server was 1,342,507 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.602 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@637cecdc (Communications link failure
+
+The last packet successfully received from the server was 1,342,000 milliseconds ago. The last packet sent successfully to the server was 1,342,049 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.657 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@8b0ca20 (Communications link failure
+
+The last packet successfully received from the server was 1,341,513 milliseconds ago. The last packet sent successfully to the server was 1,341,569 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.701 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7442f5d (Communications link failure
+
+The last packet successfully received from the server was 1,340,946 milliseconds ago. The last packet sent successfully to the server was 1,340,997 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.755 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ed6bcfc (Communications link failure
+
+The last packet successfully received from the server was 1,340,316 milliseconds ago. The last packet sent successfully to the server was 1,340,396 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.148 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41d7f86d (Communications link failure
+
+The last packet successfully received from the server was 1,770,639 milliseconds ago. The last packet sent successfully to the server was 1,770,699 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.207 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b06e2f8 (Communications link failure
+
+The last packet successfully received from the server was 1,763,628 milliseconds ago. The last packet sent successfully to the server was 1,763,697 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.249 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3875cc60 (Communications link failure
+
+The last packet successfully received from the server was 1,762,423 milliseconds ago. The last packet sent successfully to the server was 1,762,466 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.293 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d1872b5 (Communications link failure
+
+The last packet successfully received from the server was 1,761,881 milliseconds ago. The last packet sent successfully to the server was 1,761,944 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.344 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@372f9eb (Communications link failure
+
+The last packet successfully received from the server was 1,761,167 milliseconds ago. The last packet sent successfully to the server was 1,761,215 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.388 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f5fca5f (Communications link failure
+
+The last packet successfully received from the server was 1,759,783 milliseconds ago. The last packet sent successfully to the server was 1,759,831 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.441 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@295f1718 (Communications link failure
+
+The last packet successfully received from the server was 1,759,330 milliseconds ago. The last packet sent successfully to the server was 1,759,388 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.484 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@176c455c (Communications link failure
+
+The last packet successfully received from the server was 1,758,833 milliseconds ago. The last packet sent successfully to the server was 1,758,886 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.527 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3454bfb (Communications link failure
+
+The last packet successfully received from the server was 1,758,447 milliseconds ago. The last packet sent successfully to the server was 1,758,492 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.571 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@428974fe (Communications link failure
+
+The last packet successfully received from the server was 1,757,925 milliseconds ago. The last packet sent successfully to the server was 1,758,091 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.623 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13bf5c60 (Communications link failure
+
+The last packet successfully received from the server was 1,757,149 milliseconds ago. The last packet sent successfully to the server was 1,757,454 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.23:04:59.617 [scheduling-1    ] ERROR UpdateActivitySkuStockJob - 定时任务，更新活动sku库存失败
+org.springframework.dao.QueryTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x8d0c457a, L:/10.1.0.105:4352 - R:117.72.85.115/117.72.85.115:16379]; nested exception is org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x8d0c457a, L:/10.1.0.105:4352 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:48)
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:35)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.redisson.spring.data.connection.RedissonConnectionFactory.translateExceptionIfPossible(RedissonConnectionFactory.java:91)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.lym.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$1ed9b0a0.takeQueueValue(<generated>)
+	at com.lym.domain.activity.service.quota.RaffleActivityAccountQuotaService.takeQueueValue(RaffleActivityAccountQuotaService.java:66)
+	at com.lym.trigger.job.UpdateActivitySkuStockJob.exec(UpdateActivitySkuStockJob.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x8d0c457a, L:/10.1.0.105:4352 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.command.RedisExecutor.lambda$scheduleResponseTimeout$9(RedisExecutor.java:407)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+26-03-10.23:05:08.786 [AMQP Connection 117.72.85.115:5672] WARN  ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+26-03-10.23:05:10.291 [redisson-netty-2-12] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xe25afdc7, L:/10.1.0.105:4353 - R:117.72.85.115/117.72.85.115:16379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-10.23:05:25.043 [scheduling-1    ] ERROR UpdateActivitySkuStockJob - 定时任务，更新活动sku库存失败
+org.springframework.dao.QueryTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x9733cc2a, L:/10.1.0.105:12737 - R:117.72.85.115/117.72.85.115:16379]; nested exception is org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x9733cc2a, L:/10.1.0.105:12737 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:48)
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:35)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.redisson.spring.data.connection.RedissonConnectionFactory.translateExceptionIfPossible(RedissonConnectionFactory.java:91)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.lym.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$1ed9b0a0.takeQueueValue(<generated>)
+	at com.lym.domain.activity.service.quota.RaffleActivityAccountQuotaService.takeQueueValue(RaffleActivityAccountQuotaService.java:66)
+	at com.lym.trigger.job.UpdateActivitySkuStockJob.exec(UpdateActivitySkuStockJob.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x9733cc2a, L:/10.1.0.105:12737 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.command.RedisExecutor.lambda$scheduleResponseTimeout$9(RedisExecutor.java:407)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted

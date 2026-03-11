@@ -1,0 +1,323 @@
+26-03-10.17:05:07.167 [main            ] INFO  Application            - Starting Application using Java 11.0.29 on LymLikeSleep with PID 51628 (E:\Java_study\myBigMarket\big-market\big-market-app\target\classes started by 86136 in E:\Java_study\myBigMarket\big-market)
+26-03-10.17:05:07.170 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.17:05:08.098 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-10.17:05:08.100 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-10.17:05:08.150 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 37 ms. Found 0 Redis repository interfaces.
+26-03-10.17:05:08.731 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-03-10.17:05:08.738 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-03-10.17:05:08.738 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.17:05:08.738 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.17:05:08.854 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.17:05:08.854 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1637 ms
+26-03-10.17:05:09.122 [main            ] INFO  Version                - Redisson 3.23.4
+26-03-10.17:05:10.490 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.85.115/117.72.85.115:16379
+26-03-10.17:05:10.913 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.85.115/117.72.85.115:16379
+26-03-10.17:05:12.132 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-10.17:05:12.207 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-03-10.17:05:12.219 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-03-10.17:05:12.220 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [117.72.85.115:5672]
+26-03-10.17:05:12.474 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2842c098:0/SimpleConnection@1a22c1ba [delegate=amqp://admin@117.72.85.115:5672/, localPort= 65119]
+26-03-10.17:05:13.329 [main            ] INFO  Application            - Started Application in 6.616 seconds (JVM running for 8.48)
+26-03-10.17:05:14.360 [RMI TCP Connection(1)-172.25.176.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-10.17:05:14.360 [RMI TCP Connection(1)-172.25.176.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-10.17:05:14.361 [RMI TCP Connection(1)-172.25.176.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-03-10.17:05:14.409 [RMI TCP Connection(2)-172.25.176.1] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-03-10.17:05:15.029 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-03-10.17:05:15.218 [RMI TCP Connection(2)-172.25.176.1] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-03-10.17:05:15.659 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-03-10.17:09:54.374 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:54.374 [http-nio-8091-exec-8] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:54.374 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:54.375 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:54.379 [http-nio-8091-exec-8] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-03-10.17:09:55.007 [http-nio-8091-exec-8] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-03-10.17:09:55.560 [http-nio-8091-exec-8] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:55.560 [http-nio-8091-exec-9] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:55.560 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:55.625 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:56.980 [http-nio-8091-exec-7] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:56.980 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:56.984 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:56.983 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:09:57.306 [http-nio-8091-exec-11] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:57.355 [http-nio-8091-exec-12] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:57.385 [http-nio-8091-exec-10] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:09:57.385 [http-nio-8091-exec-7] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:10:19.380 [http-nio-8091-exec-13] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:10:19.380 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:10:19.382 [http-nio-8091-exec-16] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:10:19.382 [http-nio-8091-exec-15] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:10:19.732 [http-nio-8091-exec-14] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:10:19.752 [http-nio-8091-exec-15] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:10:19.761 [http-nio-8091-exec-13] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:10:19.786 [http-nio-8091-exec-16] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:16:50.983 [http-nio-8091-exec-21] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:16:50.984 [http-nio-8091-exec-22] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:16:50.986 [http-nio-8091-exec-23] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:16:50.986 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:null activityId：0
+26-03-10.17:16:51.299 [http-nio-8091-exec-24] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:16:51.304 [http-nio-8091-exec-22] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:16:51.318 [http-nio-8091-exec-21] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:16:51.336 [http-nio-8091-exec-23] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:null activityId：0 response: {"code":"0000","data":[],"info":"调用成功"}
+26-03-10.17:30:25.713 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-03-10.17:30:25.768 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Waiting for workers to finish.
+26-03-10.17:30:26.026 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-03-10.17:30:26.321 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  SimpleMessageListenerContainer - Successfully waited for workers to finish.
+26-03-10.17:30:27.495 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-03-10.17:30:27.496 [SpringApplicationShutdownHook] INFO  SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+26-03-10.21:53:32.422 [main            ] INFO  Application            - Starting Application using Java 11.0.29 on LymLikeSleep with PID 60544 (E:\Java_study\myBigMarket\big-market\big-market-app\target\classes started by 86136 in E:\Java_study\myBigMarket\big-market)
+26-03-10.21:53:32.423 [main            ] INFO  Application            - The following 1 profile is active: "dev"
+26-03-10.21:53:33.345 [main            ] INFO  RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+26-03-10.21:53:33.346 [main            ] INFO  RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+26-03-10.21:53:33.409 [main            ] INFO  RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 34 ms. Found 0 Redis repository interfaces.
+26-03-10.21:53:34.078 [main            ] INFO  TomcatWebServer        - Tomcat initialized with port(s): 8091 (http)
+26-03-10.21:53:34.089 [main            ] INFO  Http11NioProtocol      - Initializing ProtocolHandler ["http-nio-8091"]
+26-03-10.21:53:34.089 [main            ] INFO  StandardService        - Starting service [Tomcat]
+26-03-10.21:53:34.089 [main            ] INFO  StandardEngine         - Starting Servlet engine: [Apache Tomcat/9.0.75]
+26-03-10.21:53:34.215 [main            ] INFO  [/]                    - Initializing Spring embedded WebApplicationContext
+26-03-10.21:53:34.215 [main            ] INFO  ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1757 ms
+26-03-10.21:53:34.528 [main            ] INFO  Version                - Redisson 3.23.4
+26-03-10.21:53:36.424 [redisson-netty-2-4] INFO  MasterPubSubConnectionPool - 1 connections initialized for 117.72.85.115/117.72.85.115:16379
+26-03-10.21:53:36.823 [redisson-netty-2-13] INFO  MasterConnectionPool   - 5 connections initialized for 117.72.85.115/117.72.85.115:16379
+26-03-10.21:53:38.166 [main            ] INFO  EndpointLinksResolver  - Exposing 1 endpoint(s) beneath base path '/actuator'
+26-03-10.21:53:38.243 [main            ] INFO  Http11NioProtocol      - Starting ProtocolHandler ["http-nio-8091"]
+26-03-10.21:53:38.255 [main            ] INFO  TomcatWebServer        - Tomcat started on port(s): 8091 (http) with context path ''
+26-03-10.21:53:38.257 [main            ] INFO  CachingConnectionFactory - Attempting to connect to: [117.72.85.115:5672]
+26-03-10.21:53:38.467 [main            ] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2842c098:0/SimpleConnection@1a22c1ba [delegate=amqp://admin@117.72.85.115:5672/, localPort= 4360]
+26-03-10.21:53:39.874 [main            ] INFO  Application            - Started Application in 7.879 seconds (JVM running for 9.925)
+26-03-10.21:53:40.025 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-03-10.21:53:40.026 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-03-10.21:53:41.148 [pool-3-thread-1 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-03-10.21:53:41.539 [RMI TCP Connection(2)-172.25.176.1] INFO  [/]                    - Initializing Spring DispatcherServlet 'dispatcherServlet'
+26-03-10.21:53:41.539 [RMI TCP Connection(2)-172.25.176.1] INFO  DispatcherServlet      - Initializing Servlet 'dispatcherServlet'
+26-03-10.21:53:41.541 [RMI TCP Connection(2)-172.25.176.1] INFO  DispatcherServlet      - Completed initialization in 1 ms
+26-03-10.21:53:42.101 [pool-3-thread-2 ] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-03-10.21:54:30.471 [http-nio-8091-exec-7] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+26-03-10.21:54:30.471 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+26-03-10.21:54:30.471 [http-nio-8091-exec-8] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+26-03-10.21:54:30.471 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配开始 userId:xiaofuge activityId：100301
+26-03-10.21:54:30.473 [http-nio-8091-exec-7] INFO  HikariDataSource       - Retail_HikariCP - Starting...
+26-03-10.21:54:31.106 [http-nio-8091-exec-7] INFO  HikariDataSource       - Retail_HikariCP - Start completed.
+26-03-10.21:54:31.680 [http-nio-8091-exec-6] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":true,"sort":5,"waitUnLockCount":0},{"awardId":106,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":true,"sort":6,"waitUnLockCount":0},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":true,"sort":7,"waitUnLockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-03-10.21:54:31.871 [http-nio-8091-exec-7] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":true,"sort":5,"waitUnLockCount":0},{"awardId":106,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":true,"sort":6,"waitUnLockCount":0},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":true,"sort":7,"waitUnLockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-03-10.21:54:31.921 [http-nio-8091-exec-8] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":true,"sort":5,"waitUnLockCount":0},{"awardId":106,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":true,"sort":6,"waitUnLockCount":0},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":true,"sort":7,"waitUnLockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-03-10.21:54:32.087 [http-nio-8091-exec-5] INFO  RaffleStrategyController - 查询抽奖奖品列表配置完成 userId:xiaofuge activityId：100301 response: {"code":"0000","data":[{"awardId":101,"awardTitle":"随机积分","isAwardUnlock":true,"sort":1,"waitUnLockCount":0},{"awardId":102,"awardTitle":"OpenAI会员卡","isAwardUnlock":true,"sort":2,"waitUnLockCount":0},{"awardId":103,"awardTitle":"支付优惠券","isAwardUnlock":true,"sort":3,"waitUnLockCount":0},{"awardId":104,"awardTitle":"小米台灯","isAwardUnlock":true,"sort":4,"waitUnLockCount":0},{"awardId":105,"awardSubtitle":"抽奖3次后解锁","awardTitle":"小米su7周体验","isAwardUnlock":true,"sort":5,"waitUnLockCount":0},{"awardId":106,"awardSubtitle":"抽奖2次后解锁","awardTitle":"轻奢办公椅","isAwardUnlock":true,"sort":6,"waitUnLockCount":0},{"awardId":107,"awardSubtitle":"抽奖1次后解锁","awardTitle":"小霸王游戏机","isAwardUnlock":true,"sort":7,"waitUnLockCount":0},{"awardId":108,"awardTitle":"暴走玩偶","isAwardUnlock":true,"sort":8,"waitUnLockCount":0}],"info":"调用成功"}
+26-03-10.21:54:44.677 [http-nio-8091-exec-14] INFO  RaffleActivityController - 活动装配，数据预热，开始 activityId:100301
+26-03-10.21:54:47.177 [http-nio-8091-exec-14] INFO  RaffleActivityController - 活动装配，数据预热，完成 activityId:100301
+26-03-10.22:23:10.122 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@33bf28c (Communications link failure
+
+The last packet successfully received from the server was 1,718,242 milliseconds ago. The last packet sent successfully to the server was 1,718,561 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.165 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@529d4736 (Communications link failure
+
+The last packet successfully received from the server was 1,718,244 milliseconds ago. The last packet sent successfully to the server was 1,718,294 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.210 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7bec7349 (Communications link failure
+
+The last packet successfully received from the server was 1,763,499 milliseconds ago. The last packet sent successfully to the server was 1,763,546 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.264 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@571fd9d2 (Communications link failure
+
+The last packet successfully received from the server was 1,761,190 milliseconds ago. The last packet sent successfully to the server was 1,761,235 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.314 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b6cfe2f (Communications link failure
+
+The last packet successfully received from the server was 1,759,895 milliseconds ago. The last packet sent successfully to the server was 1,759,941 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.364 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3370ac83 (Communications link failure
+
+The last packet successfully received from the server was 1,758,403 milliseconds ago. The last packet sent successfully to the server was 1,758,450 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.415 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2b9ef79f (Communications link failure
+
+The last packet successfully received from the server was 1,757,701 milliseconds ago. The last packet sent successfully to the server was 1,757,749 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.472 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2666a77 (Communications link failure
+
+The last packet successfully received from the server was 1,755,404 milliseconds ago. The last packet sent successfully to the server was 1,755,454 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.526 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e977192 (Communications link failure
+
+The last packet successfully received from the server was 1,754,185 milliseconds ago. The last packet sent successfully to the server was 1,754,232 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:10.571 [pool-3-thread-10] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@58b5dc77 (Communications link failure
+
+The last packet successfully received from the server was 1,753,169 milliseconds ago. The last packet sent successfully to the server was 1,753,214 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.110 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ed70ac6 (Communications link failure
+
+The last packet successfully received from the server was 1,787,855 milliseconds ago. The last packet sent successfully to the server was 1,787,902 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.151 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@127ba5bd (Communications link failure
+
+The last packet successfully received from the server was 1,773,499 milliseconds ago. The last packet sent successfully to the server was 1,773,817 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.200 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@200370fb (Communications link failure
+
+The last packet successfully received from the server was 1,773,080 milliseconds ago. The last packet sent successfully to the server was 1,773,124 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.254 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@602da86a (Communications link failure
+
+The last packet successfully received from the server was 1,772,065 milliseconds ago. The last packet sent successfully to the server was 1,772,696 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:23:35.303 [pool-3-thread-19] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@662a0f93 (Communications link failure
+
+The last packet successfully received from the server was 1,769,784 milliseconds ago. The last packet sent successfully to the server was 1,769,831 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.110 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@584fa64c (Communications link failure
+
+The last packet successfully received from the server was 1,354,334 milliseconds ago. The last packet sent successfully to the server was 1,354,387 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.164 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@215d7e62 (Communications link failure
+
+The last packet successfully received from the server was 1,348,568 milliseconds ago. The last packet sent successfully to the server was 1,348,610 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.215 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7946572d (Communications link failure
+
+The last packet successfully received from the server was 1,348,092 milliseconds ago. The last packet sent successfully to the server was 1,348,144 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.257 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4a2607a8 (Communications link failure
+
+The last packet successfully received from the server was 1,347,331 milliseconds ago. The last packet sent successfully to the server was 1,347,387 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.313 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6f7ea566 (Communications link failure
+
+The last packet successfully received from the server was 1,344,695 milliseconds ago. The last packet sent successfully to the server was 1,344,746 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.364 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@259a7885 (Communications link failure
+
+The last packet successfully received from the server was 1,344,207 milliseconds ago. The last packet sent successfully to the server was 1,344,260 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.418 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6e2eac24 (Communications link failure
+
+The last packet successfully received from the server was 1,343,717 milliseconds ago. The last packet sent successfully to the server was 1,343,773 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.461 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@14cfed0e (Communications link failure
+
+The last packet successfully received from the server was 1,343,336 milliseconds ago. The last packet sent successfully to the server was 1,343,378 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.517 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@e802f64 (Communications link failure
+
+The last packet successfully received from the server was 1,342,954 milliseconds ago. The last packet sent successfully to the server was 1,342,996 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.559 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@78a82061 (Communications link failure
+
+The last packet successfully received from the server was 1,342,452 milliseconds ago. The last packet sent successfully to the server was 1,342,507 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.602 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@637cecdc (Communications link failure
+
+The last packet successfully received from the server was 1,342,000 milliseconds ago. The last packet sent successfully to the server was 1,342,049 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.657 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@8b0ca20 (Communications link failure
+
+The last packet successfully received from the server was 1,341,513 milliseconds ago. The last packet sent successfully to the server was 1,341,569 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.701 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7442f5d (Communications link failure
+
+The last packet successfully received from the server was 1,340,946 milliseconds ago. The last packet sent successfully to the server was 1,340,997 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:45:35.755 [pool-3-thread-7 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3ed6bcfc (Communications link failure
+
+The last packet successfully received from the server was 1,340,316 milliseconds ago. The last packet sent successfully to the server was 1,340,396 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.148 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41d7f86d (Communications link failure
+
+The last packet successfully received from the server was 1,770,639 milliseconds ago. The last packet sent successfully to the server was 1,770,699 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.207 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b06e2f8 (Communications link failure
+
+The last packet successfully received from the server was 1,763,628 milliseconds ago. The last packet sent successfully to the server was 1,763,697 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.249 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3875cc60 (Communications link failure
+
+The last packet successfully received from the server was 1,762,423 milliseconds ago. The last packet sent successfully to the server was 1,762,466 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.293 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7d1872b5 (Communications link failure
+
+The last packet successfully received from the server was 1,761,881 milliseconds ago. The last packet sent successfully to the server was 1,761,944 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.344 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@372f9eb (Communications link failure
+
+The last packet successfully received from the server was 1,761,167 milliseconds ago. The last packet sent successfully to the server was 1,761,215 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.388 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3f5fca5f (Communications link failure
+
+The last packet successfully received from the server was 1,759,783 milliseconds ago. The last packet sent successfully to the server was 1,759,831 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.441 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@295f1718 (Communications link failure
+
+The last packet successfully received from the server was 1,759,330 milliseconds ago. The last packet sent successfully to the server was 1,759,388 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.484 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@176c455c (Communications link failure
+
+The last packet successfully received from the server was 1,758,833 milliseconds ago. The last packet sent successfully to the server was 1,758,886 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.527 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3454bfb (Communications link failure
+
+The last packet successfully received from the server was 1,758,447 milliseconds ago. The last packet sent successfully to the server was 1,758,492 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.571 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@428974fe (Communications link failure
+
+The last packet successfully received from the server was 1,757,925 milliseconds ago. The last packet sent successfully to the server was 1,758,091 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.22:52:55.623 [pool-3-thread-3 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@13bf5c60 (Communications link failure
+
+The last packet successfully received from the server was 1,757,149 milliseconds ago. The last packet sent successfully to the server was 1,757,454 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-10.23:04:59.617 [scheduling-1    ] ERROR UpdateActivitySkuStockJob - 定时任务，更新活动sku库存失败
+org.springframework.dao.QueryTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x8d0c457a, L:/10.1.0.105:4352 - R:117.72.85.115/117.72.85.115:16379]; nested exception is org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x8d0c457a, L:/10.1.0.105:4352 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:48)
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:35)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.redisson.spring.data.connection.RedissonConnectionFactory.translateExceptionIfPossible(RedissonConnectionFactory.java:91)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.lym.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$1ed9b0a0.takeQueueValue(<generated>)
+	at com.lym.domain.activity.service.quota.RaffleActivityAccountQuotaService.takeQueueValue(RaffleActivityAccountQuotaService.java:66)
+	at com.lym.trigger.job.UpdateActivitySkuStockJob.exec(UpdateActivitySkuStockJob.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x8d0c457a, L:/10.1.0.105:4352 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.command.RedisExecutor.lambda$scheduleResponseTimeout$9(RedisExecutor.java:407)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+26-03-10.23:05:08.786 [AMQP Connection 117.72.85.115:5672] WARN  ForgivingExceptionHandler - An unexpected connection driver error occurred (Exception message: Connection reset)
+26-03-10.23:05:08.941 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  SimpleMessageListenerContainer - Restarting Consumer@3cb376a3: tags=[[amq.ctag-AK6FgLcPshgnlJNjATpsmw]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@117.72.85.115:5672/,1), conn: Proxy@8ad6d29 Shared Rabbit Connection: SimpleConnection@1a22c1ba [delegate=amqp://admin@117.72.85.115:5672/, localPort= 4360], acknowledgeMode=AUTO local queue size=0
+26-03-10.23:05:08.951 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Attempting to connect to: [117.72.85.115:5672]
+26-03-10.23:05:09.129 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  CachingConnectionFactory - Created new connection: rabbitConnectionFactory#2842c098:1/SimpleConnection@41de530f [delegate=amqp://admin@117.72.85.115:5672/, localPort= 12734]
+26-03-10.23:05:09.429 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] INFO  SimpleMessageListenerContainer - Restarting Consumer@61555218: tags=[[amq.ctag-YW-KULcEArQ0KEa-2_W35Q]], channel=Cached Rabbit Channel: AMQChannel(amqp://admin@117.72.85.115:5672/,2), conn: Proxy@8ad6d29 Shared Rabbit Connection: SimpleConnection@41de530f [delegate=amqp://admin@117.72.85.115:5672/, localPort= 12734], acknowledgeMode=AUTO local queue size=0
+26-03-10.23:05:10.291 [redisson-netty-2-12] ERROR ErrorsLoggingHandler   - Exception occured. Channel: [id: 0xe25afdc7, L:/10.1.0.105:4353 - R:117.72.85.115/117.72.85.115:16379]
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-10.23:05:25.043 [scheduling-1    ] ERROR UpdateActivitySkuStockJob - 定时任务，更新活动sku库存失败
+org.springframework.dao.QueryTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x9733cc2a, L:/10.1.0.105:12737 - R:117.72.85.115/117.72.85.115:16379]; nested exception is org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x9733cc2a, L:/10.1.0.105:12737 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:48)
+	at org.redisson.spring.data.connection.RedissonExceptionConverter.convert(RedissonExceptionConverter.java:35)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.redisson.spring.data.connection.RedissonConnectionFactory.translateExceptionIfPossible(RedissonConnectionFactory.java:91)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:242)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.lym.infrastructure.persistent.repository.ActivityRepository$$EnhancerBySpringCGLIB$$1ed9b0a0.takeQueueValue(<generated>)
+	at com.lym.domain.activity.service.quota.RaffleActivityAccountQuotaService.takeQueueValue(RaffleActivityAccountQuotaService.java:66)
+	at com.lym.trigger.job.UpdateActivitySkuStockJob.exec(UpdateActivitySkuStockJob.java:27)
+	at jdk.internal.reflect.GeneratedMethodAccessor51.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:95)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.redisson.client.RedisResponseTimeoutException: Redis server response timeout (15000 ms) occured after 0 retry attempts, is non-idempotent command: true Check connection with Redis node: 117.72.85.115/117.72.85.115:16379 for TCP packet drops or bandwidth limits.  Try to increase nettyThreads and/or timeout settings. Command: (LPOP), params: [activity_sku_count_query_key], channel: [id: 0x9733cc2a, L:/10.1.0.105:12737 - R:117.72.85.115/117.72.85.115:16379]
+	at org.redisson.command.RedisExecutor.lambda$scheduleResponseTimeout$9(RedisExecutor.java:407)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+	at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+	at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+	at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+	at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
