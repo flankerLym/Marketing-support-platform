@@ -1,7 +1,7 @@
 package com.lym.domain.activity.repository;
 
 
-import com.lym.domain.activity.model.aggregate.CreateOrderAggregate;
+import com.lym.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.lym.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
 import com.lym.domain.activity.model.entity.*;
 import com.lym.domain.activity.model.valobj.ActivitySkuStockKeyVO;
@@ -21,7 +21,7 @@ public interface IActivityRepository {
 
     ActivityCountEntity queryRaffleActivityCountByActivityCountId(Long activityCountId);
 
-    void doSaveOrder(CreateOrderAggregate createOrderAggregate);
+    void doSaveOrder(CreateQuotaOrderAggregate createQuotaOrderAggregate);
 
     void cacheActivitySkuStockCount(String cacheKey, Integer stockCount);
 
@@ -50,4 +50,9 @@ public interface IActivityRepository {
     List<ActivitySkuEntity> queryActivitySkuListByActivityId(Long activityId);
 
     Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId);
+
+    ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
+
+    Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
+
 }

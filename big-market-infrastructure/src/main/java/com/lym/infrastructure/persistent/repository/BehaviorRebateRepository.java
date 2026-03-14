@@ -1,6 +1,5 @@
 package com.lym.infrastructure.persistent.repository;
 
-
 import cn.bugstack.middleware.db.router.strategy.IDBRouterStrategy;
 import com.alibaba.fastjson.JSON;
 import com.lym.domain.rebate.model.aggregate.BehaviorRebateAggregate;
@@ -13,6 +12,7 @@ import com.lym.infrastructure.event.EventPublisher;
 import com.lym.infrastructure.persistent.dao.IDailyBehaviorRebateDao;
 import com.lym.infrastructure.persistent.dao.ITaskDao;
 import com.lym.infrastructure.persistent.dao.IUserBehaviorRebateOrderDao;
+import com.lym.infrastructure.persistent.po.DailyBehaviorRebate;
 import com.lym.infrastructure.persistent.po.Task;
 import com.lym.infrastructure.persistent.po.UserBehaviorRebateOrder;
 import com.lym.types.enums.ResponseCode;
@@ -21,7 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.support.TransactionTemplate;
-import com.lym.infrastructure.persistent.po.DailyBehaviorRebate;
+
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
@@ -79,6 +79,7 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
                         userBehaviorRebateOrder.setRebateDesc(behaviorRebateOrderEntity.getRebateDesc());
                         userBehaviorRebateOrder.setRebateType(behaviorRebateOrderEntity.getRebateType());
                         userBehaviorRebateOrder.setRebateConfig(behaviorRebateOrderEntity.getRebateConfig());
+                        userBehaviorRebateOrder.setOutBusinessNo(behaviorRebateOrderEntity.getOutBusinessNo());
                         userBehaviorRebateOrder.setBizId(behaviorRebateOrderEntity.getBizId());
                         userBehaviorRebateOrderDao.insert(userBehaviorRebateOrder);
 
@@ -96,7 +97,7 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
                 } catch (DuplicateKeyException e) {
                     status.setRollbackOnly();
                     log.error("写入返利记录，唯一索引冲突 userId: {}", userId, e);
-                    throw new AppException(ResponseCode.INDEX_DUP.getCode(), e);
+                    throw new AppException(ResponseCode.INDEX_DUP.getCode(), ResponseCode.INDEX_DUP.getInfo());
                 }
             });
         } finally {
@@ -120,6 +121,31 @@ public class BehaviorRebateRepository implements IBehaviorRebateRepository {
             }
         }
 
+    }
+
+    @Override
+    public List<BehaviorRebateOrderEntity> queryOrderByOutBusinessNo(String userId, String outBusinessNo) {
+        // 1. 请求对象
+        UserBehaviorRebateOrder userBehaviorRebateOrderReq = new UserBehaviorRebateOrder();
+        userBehaviorRebateOrderReq.setUserId(userId);
+        userBehaviorRebateOrderReq.setOutBusinessNo(outBusinessNo);
+        // 2. 查询结果
+        List<UserBehaviorRebateOrder> userBehaviorRebateOrderResList = userBehaviorRebateOrderDao.queryOrderByOutBusinessNo(userBehaviorRebateOrderReq);
+        List<BehaviorRebateOrderEntity> behaviorRebateOrderEntities = new ArrayList<>(userBehaviorRebateOrderResList.size());
+        for (UserBehaviorRebateOrder userBehaviorRebateOrder : userBehaviorRebateOrderResList) {
+            BehaviorRebateOrderEntity behaviorRebateOrderEntity = BehaviorRebateOrderEntity.builder()
+                    .userId(userBehaviorRebateOrder.getUserId())
+                    .orderId(userBehaviorRebateOrder.getOrderId())
+                    .behaviorType(userBehaviorRebateOrder.getBehaviorType())
+                    .rebateDesc(userBehaviorRebateOrder.getRebateDesc())
+                    .rebateType(userBehaviorRebateOrder.getRebateType())
+                    .rebateConfig(userBehaviorRebateOrder.getRebateConfig())
+                    .outBusinessNo(userBehaviorRebateOrder.getOutBusinessNo())
+                    .bizId(userBehaviorRebateOrder.getBizId())
+                    .build();
+            behaviorRebateOrderEntities.add(behaviorRebateOrderEntity);
+        }
+        return behaviorRebateOrderEntities;
     }
 
 }

@@ -1,10 +1,7 @@
 package com.lym.domain.activity.service.quota;
 
-import com.lym.domain.activity.model.aggregate.CreateOrderAggregate;
-import com.lym.domain.activity.model.entity.ActivityCountEntity;
-import com.lym.domain.activity.model.entity.ActivityEntity;
-import com.lym.domain.activity.model.entity.ActivityOrderEntity;
-import com.lym.domain.activity.model.entity.ActivitySkuEntity;
+import com.lym.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
+import com.lym.domain.activity.model.entity.*;
 import com.lym.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 import com.lym.domain.activity.model.valobj.OrderStateVO;
 import com.lym.domain.activity.repository.IActivityRepository;
@@ -28,7 +25,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
     @Override
-    protected CreateOrderAggregate buildOrderAggregate(com.lym.domain.activity.model.entity.SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
+    protected CreateQuotaOrderAggregate buildOrderAggregate(SkuRechargeEntity skuRechargeEntity, ActivitySkuEntity activitySkuEntity, ActivityEntity activityEntity, ActivityCountEntity activityCountEntity) {
         // 订单实体对象
         ActivityOrderEntity activityOrderEntity = new ActivityOrderEntity();
         activityOrderEntity.setUserId(skuRechargeEntity.getUserId());
@@ -46,7 +43,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
         activityOrderEntity.setOutBusinessNo(skuRechargeEntity.getOutBusinessNo());
 
         // 构建聚合对象
-        return CreateOrderAggregate.builder()
+        return CreateQuotaOrderAggregate.builder()
                 .userId(skuRechargeEntity.getUserId())
                 .activityId(activitySkuEntity.getActivityId())
                 .totalCount(activityCountEntity.getTotalCount())
@@ -57,7 +54,7 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
     }
 
     @Override
-    protected void doSaveOrder(CreateOrderAggregate createOrderAggregate) {
+    protected void doSaveOrder(CreateQuotaOrderAggregate createOrderAggregate) {
         activityRepository.doSaveOrder(createOrderAggregate);
     }
 
@@ -81,11 +78,19 @@ public class RaffleActivityAccountQuotaService extends AbstractRaffleActivityAcc
         activityRepository.clearActivitySkuStock(sku);
     }
 
+    @Override
+    public Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId) {
+        return activityRepository.queryRaffleActivityAccountPartakeCount(activityId, userId);
+    }
 
     @Override
     public Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId) {
         return activityRepository.queryRaffleActivityAccountDayPartakeCount(activityId, userId);
     }
 
+    @Override
+    public ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId) {
+        return activityRepository.queryActivityAccountEntity(activityId, userId);
+    }
 
 }

@@ -1,7 +1,8 @@
 package com.lym.domain.award.repository;
-
-
+import com.lym.domain.award.model.aggregate.GiveOutPrizesAggregate;
 import com.lym.domain.award.model.aggregate.UserAwardRecordAggregate;
+
+
 
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
@@ -11,5 +12,11 @@ import com.lym.domain.award.model.aggregate.UserAwardRecordAggregate;
 public interface IAwardRepository {
 
     void saveUserAwardRecord(UserAwardRecordAggregate userAwardRecordAggregate);
+
+    String queryAwardConfig(Integer awardId);
+
+    void saveGiveOutPrizesAggregate(GiveOutPrizesAggregate giveOutPrizesAggregate);
+
+    String queryAwardKey(Integer awardId);
 
 }

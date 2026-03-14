@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 @Slf4j
 @Component("rule_blacklist")
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-public class BackListLogicChain extends AbstractLogicChain {
+public class BlackListLogicChain extends AbstractLogicChain {
 
     @Resource
     private IStrategyRepository repository;
@@ -36,6 +36,7 @@ public class BackListLogicChain extends AbstractLogicChain {
                 return DefaultChainFactory.StrategyAwardVO.builder()
                         .awardId(awardId)
                         .logicModel(ruleModel())
+                        .awardRuleValue("0.01,1")
                         .build();
             }
         }

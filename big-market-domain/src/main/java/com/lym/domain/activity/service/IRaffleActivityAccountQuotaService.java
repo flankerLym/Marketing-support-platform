@@ -1,5 +1,6 @@
 package com.lym.domain.activity.service;
 
+import com.lym.domain.activity.model.entity.ActivityAccountEntity;
 import com.lym.domain.activity.model.entity.SkuRechargeEntity;
 
 ;
@@ -23,4 +24,8 @@ public interface IRaffleActivityAccountQuotaService {
     String createSkuRechargeOrder(SkuRechargeEntity skuRechargeEntity);
 
     Integer queryRaffleActivityAccountDayPartakeCount(Long activityId, String userId);
+
+    ActivityAccountEntity queryActivityAccountEntity(Long activityId, String userId);
+
+    public abstract Integer queryRaffleActivityAccountPartakeCount(Long activityId, String userId);
 }
