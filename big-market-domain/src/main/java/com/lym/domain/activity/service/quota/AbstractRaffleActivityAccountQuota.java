@@ -27,7 +27,7 @@ public abstract class AbstractRaffleActivityAccountQuota extends RaffleActivityA
     }
 
     @Override
-    public String createSkuRechargeOrder(com.lym.domain.activity.model.entity.SkuRechargeEntity skuRechargeEntity) {
+    public String createOrder(com.lym.domain.activity.model.entity.SkuRechargeEntity skuRechargeEntity) {
         // 1. 参数校验
         String userId = skuRechargeEntity.getUserId();
         Long sku = skuRechargeEntity.getSku();
