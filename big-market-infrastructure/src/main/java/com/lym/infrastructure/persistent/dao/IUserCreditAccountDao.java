@@ -1,6 +1,5 @@
 package com.lym.infrastructure.persistent.dao;
 
-
 import com.lym.infrastructure.persistent.po.UserCreditAccount;
 import org.apache.ibatis.annotations.Mapper;
 
@@ -15,5 +14,7 @@ public interface IUserCreditAccountDao {
     void insert(UserCreditAccount userCreditAccountReq);
 
     int updateAddAmount(UserCreditAccount userCreditAccountReq);
+
+    UserCreditAccount queryUserCreditAccount(UserCreditAccount userCreditAccountReq);
 
 }

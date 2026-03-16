@@ -19,7 +19,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class RaffleActivityAccountDay {
 
-    private final static SimpleDateFormat dayFormat = new SimpleDateFormat("yyyy-MM-dd");
+    private static final SimpleDateFormat dayFormat = new SimpleDateFormat("yyyy-MM-dd");
     /** 自增ID */
     private String id;
     /** 用户ID */
