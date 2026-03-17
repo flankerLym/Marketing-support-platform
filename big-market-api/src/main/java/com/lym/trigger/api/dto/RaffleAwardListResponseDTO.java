@@ -5,11 +5,17 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 抽奖奖品列表，应答对象
+ * @create 2024-02-14 09:43
+ */
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class RaffleAwardListResponseDTO {
+
     // 奖品ID
     private Integer awardId;
     // 奖品标题
@@ -24,7 +30,5 @@ public class RaffleAwardListResponseDTO {
     private Boolean isAwardUnlock;
     // 等待解锁次数 - 规定的抽奖N次解锁减去用户已经抽奖次数
     private Integer waitUnLockCount;
-
-
 
 }

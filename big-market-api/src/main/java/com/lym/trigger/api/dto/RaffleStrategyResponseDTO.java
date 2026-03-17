@@ -5,6 +5,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * @author Fuzhengwei bugstack.cn @小傅哥
+ * @description 抽奖应答结果
+ * @create 2024-02-14 17:26
+ */
 @Data
 @Builder
 @AllArgsConstructor
@@ -17,4 +22,3 @@ public class RaffleStrategyResponseDTO {
     private Integer awardIndex;
 
 }
-
