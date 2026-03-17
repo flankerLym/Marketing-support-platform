@@ -2,11 +2,11 @@ package com.lym.infrastructure.persistent.po;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
 import java.util.Date;
 
 @Data
 public class RaffleActivitySku {
-    private Long id;
     /**
      * 商品sku
      */
@@ -28,6 +28,10 @@ public class RaffleActivitySku {
      */
     private Integer stockCountSurplus;
     /**
+     * 商品金额【积分】
+     */
+    private BigDecimal productAmount;
+    /**
      * 创建时间
      */
     private Date createTime;
@@ -36,5 +40,6 @@ public class RaffleActivitySku {
      * 更新时间
      */
     private Date updateTime;
+
 
 }

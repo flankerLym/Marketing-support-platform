@@ -4,6 +4,7 @@ package com.lym.trigger.listener;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.TypeReference;
 import com.lym.domain.activity.model.entity.SkuRechargeEntity;
+import com.lym.domain.activity.model.valobj.OrderTradeTypeVO;
 import com.lym.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.lym.domain.credit.model.entity.TradeEntity;
 import com.lym.domain.credit.model.valobj.TradeNameVO;
@@ -33,7 +34,6 @@ public class RebateMessageCustomer {
     @Resource
     private ICreditAdjustService creditAdjustService;
 
-
     @RabbitListener(queuesToDeclare = @Queue(value = "${spring.rabbitmq.topic.send_rebate}"))
     public void listener(String message) {
         try {
@@ -50,6 +50,7 @@ public class RebateMessageCustomer {
                     skuRechargeEntity.setUserId(rebateMessage.getUserId());
                     skuRechargeEntity.setSku(Long.valueOf(rebateMessage.getRebateConfig()));
                     skuRechargeEntity.setOutBusinessNo(rebateMessage.getBizId());
+                    skuRechargeEntity.setOrderTradeType(OrderTradeTypeVO.rebate_no_pay_trade);
                     raffleActivityAccountQuotaService.createOrder(skuRechargeEntity);
                     break;
                 case "integral":

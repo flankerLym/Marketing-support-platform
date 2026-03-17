@@ -1,4 +1,4 @@
-package com.lym.domain.activity.model.event;
+package com.lym.domain.activity.event;
 
 import com.lym.types.event.BaseEvent;
 import org.apache.commons.lang3.RandomStringUtils;
