@@ -1,10 +1,12 @@
 package com.lym.domain.activity.repository;
 
 
-import com.lym.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.lym.domain.activity.model.aggregate.CreatePartakeOrderAggregate;
+import com.lym.domain.activity.model.aggregate.CreateQuotaOrderAggregate;
 import com.lym.domain.activity.model.entity.*;
 import com.lym.domain.activity.model.valobj.ActivitySkuStockKeyVO;
+
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -64,6 +66,7 @@ public interface IActivityRepository {
 
     List<SkuProductEntity> querySkuProductEntityListByActivityId(Long activityId);
 
+    BigDecimal queryUserCreditAccountAmount(String userId);
 
 
 
