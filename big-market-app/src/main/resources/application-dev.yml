@@ -16,7 +16,7 @@ app:
 
 spring:
   rabbitmq:
-    addresses: 117.72.85.115
+    addresses: 175.178.182.172
     port: 5672
     username: admin
     password: 140810921
@@ -54,7 +54,7 @@ mini-db-router:
       list: db01,db02
       db00:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://117.72.85.115:13306/big_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+        url: jdbc:mysql://175.178.182.172:13306/big_market?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
         password: 140810921
         type-class-name: com.zaxxer.hikari.HikariDataSource
@@ -69,7 +69,7 @@ mini-db-router:
           connection-test-query: SELECT 1
       db01:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://117.72.85.115:13306/big_market_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+        url: jdbc:mysql://175.178.182.172:13306/big_market_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
         password: 140810921
         type-class-name: com.zaxxer.hikari.HikariDataSource
@@ -84,7 +84,7 @@ mini-db-router:
           connection-test-query: SELECT 1
       db02:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://117.72.85.115:13306/big_market_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
+        url: jdbc:mysql://175.178.182.172:13306/big_market_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=true
         username: root
         password: 140810921
         type-class-name: com.zaxxer.hikari.HikariDataSource
@@ -105,7 +105,7 @@ mybatis:
 redis:
   sdk:
     config:
-      host: 117.72.85.115
+      host: 175.178.182.172
       port: 16379
       pool-size: 10
       min-idle-size: 5
@@ -116,6 +116,29 @@ redis:
       retry-interval: 1000
       ping-interval: 60000
       keep-alive: true
+
+dubbo:
+  application:
+    name: big-market
+    version: 1.0
+  registry:
+    id: nacos-registry
+    address: nacos://175.178.182.172:8848
+  protocol:
+    name: dubbo
+    port: -1
+  scan:
+    base-packages: com.lym.trigger.api
+
+zookeeper:
+  sdk:
+    config:
+      connect-string: 175.178.182.172:2181
+      base-sleep-time-ms: 1000
+      max-retries: 3
+      session-timeout-ms: 18000
+      connection-timeout-ms: 30000
+
 # 日志
 logging:
   level:

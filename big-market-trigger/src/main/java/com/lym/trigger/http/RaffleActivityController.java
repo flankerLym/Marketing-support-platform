@@ -1,5 +1,6 @@
 package com.lym.trigger.http;
 
+import com.alibaba.fastjson.JSON;
 import com.lym.domain.activity.model.entity.*;
 import com.lym.domain.activity.model.valobj.OrderTradeTypeVO;
 import com.lym.domain.activity.service.IRaffleActivityAccountQuotaService;
@@ -24,13 +25,14 @@ import com.lym.domain.strategy.service.IRaffleStrategy;
 import com.lym.domain.strategy.service.armory.IStrategyArmory;
 import com.lym.trigger.api.IRaffleActivityService;
 import com.lym.trigger.api.dto.*;
+import com.lym.types.annotations.DCCValue;
 import com.lym.types.enums.ResponseCode;
 import com.lym.types.exception.AppException;
 import com.lym.types.model.Response;
-import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -49,6 +51,7 @@ import java.util.List;
 @RestController()
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/activity/")
+@DubboService(version = "1.0")
 public class RaffleActivityController implements IRaffleActivityService {
 
     private final SimpleDateFormat dateFormatDay = new SimpleDateFormat("yyyyMMdd");
@@ -71,6 +74,10 @@ public class RaffleActivityController implements IRaffleActivityService {
     private IBehaviorRebateService behaviorRebateService;
     @Resource
     private ICreditAdjustService creditAdjustService;
+
+    // dcc 统一配置中心动态配置降级开关
+    @DCCValue("degradeSwitch:open")
+    private String degradeSwitch;
 
     /**
      * 活动装配 - 数据预热 | 把活动配置的对应的 sku 一起装配
@@ -131,6 +138,12 @@ public class RaffleActivityController implements IRaffleActivityService {
     public Response<ActivityDrawResponseDTO> draw(@RequestBody ActivityDrawRequestDTO request) {
         try {
             log.info("活动抽奖开始 userId:{} activityId:{}", request.getUserId(), request.getActivityId());
+            if (!"open".equals(degradeSwitch)) {
+                return Response.<ActivityDrawResponseDTO>builder()
+                        .code(ResponseCode.DEGRADE_SWITCH.getCode())
+                        .info(ResponseCode.DEGRADE_SWITCH.getInfo())
+                        .build();
+            }
             // 1. 参数校验
             if (StringUtils.isBlank(request.getUserId()) || null == request.getActivityId()) {
                 throw new AppException(ResponseCode.ILLEGAL_PARAMETER.getCode(), ResponseCode.ILLEGAL_PARAMETER.getInfo());

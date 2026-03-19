@@ -1,5 +1,6 @@
 package com.lym.trigger.http;
 
+import com.alibaba.fastjson.JSON;
 import com.lym.domain.activity.service.IRaffleActivityAccountQuotaService;
 import com.lym.domain.strategy.model.entity.RaffleAwardEntity;
 import com.lym.domain.strategy.model.entity.RaffleFactorEntity;
@@ -14,16 +15,15 @@ import com.lym.trigger.api.dto.*;
 import com.lym.types.enums.ResponseCode;
 import com.lym.types.exception.AppException;
 import com.lym.types.model.Response;
-import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.dubbo.config.annotation.DubboService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 营销抽奖服务
@@ -33,6 +33,7 @@ import java.util.Map;
 @RestController()
 @CrossOrigin("${app.config.cross-origin}")
 @RequestMapping("/api/${app.config.api-version}/raffle/strategy/")
+@DubboService(version = "1.0")
 public class RaffleStrategyController implements IRaffleStrategyService {
 
     @Resource
