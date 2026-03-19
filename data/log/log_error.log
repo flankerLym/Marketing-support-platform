@@ -573,3 +573,447 @@ The last packet successfully received from the server was 1,782,409 milliseconds
 26-03-19.13:00:11.463 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
 26-03-19.13:00:11.463 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
 26-03-19.13:00:11.464 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.16:57:52.685 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.16:58:22.860 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 30127ms for session id 0x0
+26-03-19.16:58:22.865 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 30127ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.16:58:26.977 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background operation retry gave up
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-19.16:58:26.977 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background retry gave up
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-19.16:58:44.982 [Curator-ConnectionStateManager-0] WARN  ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 18006. Adjusted session timeout ms: 18000
+26-03-19.16:58:45.002 [main-EventThread] WARN  ConnectionState        - Session expired event received
+26-03-19.16:59:14.560 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 29555ms for session id 0x0
+26-03-19.16:59:14.560 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 29555ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.16:59:50.719 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 36055ms for session id 0x0
+26-03-19.16:59:50.719 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 36055ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.16:59:50.827 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DCCValueBeanFactory' defined in file [E:\Java_study\myBigMarket\big-market\big-market-app\target\classes\com\lym\config\DCCValueBeanFactory.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+26-03-19.17:00:29.843 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 39017ms for session id 0x0
+26-03-19.17:00:29.843 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - An exception was thrown while closing send thread for session 0x0.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 39017ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:00:29.988 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DCCValueBeanFactory' defined in file [E:\Java_study\myBigMarket\big-market\big-market-app\target\classes\com\lym\config\DCCValueBeanFactory.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:764)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.lym.Application.main(Application.java:18)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	... 19 common frames omitted
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2246)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:268)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:257)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:93)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:254)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:247)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:206)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:35)
+	at com.lym.config.DCCValueBeanFactory.<init>(DCCValueBeanFactory.java:37)
+	at com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 21 common frames omitted
+26-03-19.17:03:54.439 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.17:04:29.639 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background operation retry gave up
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-19.17:04:29.639 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background retry gave up
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-19.17:04:32.492 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 38018ms for session id 0x0
+26-03-19.17:04:32.493 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 38018ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:04:47.645 [Curator-ConnectionStateManager-0] WARN  ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 18008. Adjusted session timeout ms: 18000
+26-03-19.17:04:47.647 [main-EventThread] WARN  ConnectionState        - Session expired event received
+26-03-19.17:05:25.724 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 38075ms for session id 0x0
+26-03-19.17:05:25.724 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 38075ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:05:56.389 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 30559ms for session id 0x0
+26-03-19.17:05:56.389 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 30559ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:05:56.496 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DCCValueBeanFactory' defined in file [E:\Java_study\myBigMarket\big-market\big-market-app\target\classes\com\lym\config\DCCValueBeanFactory.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+26-03-19.17:06:24.078 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 27584ms for session id 0x0
+26-03-19.17:06:24.078 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - An exception was thrown while closing send thread for session 0x0.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 27584ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:06:24.214 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DCCValueBeanFactory' defined in file [E:\Java_study\myBigMarket\big-market\big-market-app\target\classes\com\lym\config\DCCValueBeanFactory.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:764)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.lym.Application.main(Application.java:18)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	... 19 common frames omitted
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2246)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:268)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:257)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:93)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:254)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:247)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:206)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:35)
+	at com.lym.config.DCCValueBeanFactory.<init>(DCCValueBeanFactory.java:37)
+	at com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 21 common frames omitted
+26-03-19.17:09:00.279 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.17:09:35.507 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background operation retry gave up
+org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.checkBackgroundRetry(CuratorFrameworkImpl.java:851)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:999)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-19.17:09:35.507 [Curator-Framework-0] ERROR CuratorFrameworkImpl   - Background retry gave up
+org.apache.curator.CuratorConnectionLossException: KeeperErrorCode = ConnectionLoss
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.performBackgroundOperation(CuratorFrameworkImpl.java:981)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.backgroundOperationsLoop(CuratorFrameworkImpl.java:952)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl.access$300(CuratorFrameworkImpl.java:66)
+	at org.apache.curator.framework.imps.CuratorFrameworkImpl$4.call(CuratorFrameworkImpl.java:342)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+26-03-19.17:09:37.813 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 37500ms for session id 0x0
+26-03-19.17:09:37.814 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 37500ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:09:53.505 [Curator-ConnectionStateManager-0] WARN  ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 18000. Adjusted session timeout ms: 18000
+26-03-19.17:09:53.508 [main-EventThread] WARN  ConnectionState        - Session expired event received
+26-03-19.17:10:17.219 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 23710ms for session id 0x0
+26-03-19.17:10:17.219 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 23710ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:10:55.823 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 38498ms for session id 0x0
+26-03-19.17:10:55.823 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x0 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 38498ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:10:55.930 [main            ] WARN  AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DCCValueBeanFactory' defined in file [E:\Java_study\myBigMarket\big-market\big-market-app\target\classes\com\lym\config\DCCValueBeanFactory.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+26-03-19.17:11:23.229 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 27301ms for session id 0x0
+26-03-19.17:11:23.229 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - An exception was thrown while closing send thread for session 0x0.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 27301ms for session id 0x0
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.17:11:23.364 [main            ] ERROR SpringApplication      - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DCCValueBeanFactory' defined in file [E:\Java_study\myBigMarket\big-market\big-market-app\target\classes\com\lym\config\DCCValueBeanFactory.class]: Bean instantiation via constructor failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:315)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:296)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:764)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.lym.Application.main(Application.java:18)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f]: Constructor threw exception; nested exception is org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:117)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:311)
+	... 19 common frames omitted
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /big-market-dcc/config
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:102)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54)
+	at org.apache.zookeeper.ZooKeeper.exists(ZooKeeper.java:2246)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:268)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl$3.call(ExistsBuilderImpl.java:257)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:93)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForegroundStandard(ExistsBuilderImpl.java:254)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.pathInForeground(ExistsBuilderImpl.java:247)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:206)
+	at org.apache.curator.framework.imps.ExistsBuilderImpl.forPath(ExistsBuilderImpl.java:35)
+	at com.lym.config.DCCValueBeanFactory.<init>(DCCValueBeanFactory.java:37)
+	at com.lym.config.DCCValueBeanFactory$$EnhancerBySpringCGLIB$$b0dba99f.<init>(<generated>)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211)
+	... 21 common frames omitted
+26-03-19.20:04:02.455 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.20:04:38.353 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:04:38.353 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:04:47.604 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+26-03-19.20:04:51.554 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:04:53.204 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=86936&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773921891548&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:04:54.357 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=86936&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773921893916&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:04:54.877 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getExportedURLs,getAndListenInstanceMetadata,serviceName,getSubscribedURLs,version,exportInstanceMetadata,getExportedServiceURLs,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=86936&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1773921894492&version=1.0.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:33.175 [Thread-9        ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+26-03-19.20:05:33.175 [Thread-4        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+26-03-19.20:05:33.175 [Thread-9        ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+26-03-19.20:05:33.177 [Thread-4        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+26-03-19.20:05:33.179 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:33.184 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:33.185 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:33.185 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:33.788 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=86936&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773921893916&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:35.352 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:35.353 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:35.354 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:05:35.354 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:09:44.898 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.20:10:20.573 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:10:20.573 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:10:31.589 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+26-03-19.20:10:35.760 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:10:37.087 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,strategyArmory,queryRaffleAwardList,queryRaffleStrategyRuleWeight&pid=86000&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773922235753&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:10:37.903 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,querySkuProductListByActivityId,creditPayExchangeSku,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=86000&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773922237458&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:10:38.429 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getAndListenInstanceMetadata,getExportedURLs,serviceName,version,getSubscribedURLs,getExportedServiceURLs,exportInstanceMetadata,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=86000&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1773922238042&version=1.0.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:30:49.940 [http-nio-8091-exec-12] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.20:31:22.061 [Thread-9        ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+26-03-19.20:31:22.061 [Thread-4        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+26-03-19.20:31:22.061 [Thread-9        ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+26-03-19.20:31:22.063 [Thread-4        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+26-03-19.20:31:22.073 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:22.074 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:22.074 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:22.074 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:22.740 [Dubbo-framework-registry-notification-0-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,strategyArmory,queryRaffleAwardList,queryRaffleStrategyRuleWeight&pid=86000&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773922235753&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:24.315 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:24.315 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:24.315 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:24.315 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:31:24.516 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - An exception was thrown while closing send thread for session 0x100035556600003.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100035556600003, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:75)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:348)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1262)
+26-03-19.20:31:38.268 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.20:32:12.966 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:12.966 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:22.849 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+26-03-19.20:32:27.120 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:28.679 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=86728&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923547115&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:29.103 [Dubbo-framework-registry-notification-0-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=86728&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923547115&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:29.717 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=86728&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923549179&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:30.091 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=86728&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923549179&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:32:30.502 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getAndListenInstanceMetadata,getExportedURLs,serviceName,version,getSubscribedURLs,getExportedServiceURLs,exportInstanceMetadata,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=86728&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1773923549960&version=1.0.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:41.084 [Thread-9        ] WARN  NotifyCenter           - [NotifyCenter] Start destroying Publisher
+26-03-19.20:34:41.084 [Thread-4        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Start destroying common HttpClient
+26-03-19.20:34:41.085 [Thread-9        ] WARN  NotifyCenter           - [NotifyCenter] Destruction of the end
+26-03-19.20:34:41.087 [Thread-4        ] WARN  HttpClientBeanHolder   - [HttpClientBeanHolder] Destruction of the end
+26-03-19.20:34:41.088 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:41.091 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:41.091 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:41.092 [SpringApplicationShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:41.729 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=86728&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923549179&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:43.269 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:43.270 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:43.270 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:43.270 [DubboShutdownHook] WARN  RegistryManager        -  [DUBBO] All registry instances have been destroyed, failed to fetch any instance. Usually, this means no need to try to do unnecessary redundant resource clearance, all registries has been taken care of., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:34:43.409 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - An exception was thrown while closing send thread for session 0x100035556600004.
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x100035556600004, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:75)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:348)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1262)
+26-03-19.20:34:55.436 [main            ] WARN  CuratorZookeeperClient - session timeout [18000] is less than connection timeout [30000]
+26-03-19.20:35:30.259 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:30.259 [main            ] WARN  ConfigurationUtils     -  [DUBBO] Config center was specified, but no config item found., dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:39.811 [main            ] WARN  LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+26-03-19.20:35:43.932 [main            ] WARN  ServiceConfig          -  [DUBBO] Use random available port(20880) for protocol dubbo, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:45.214 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=88140&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923743925&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:45.607 [Dubbo-framework-registry-notification-0-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleStrategyService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleStrategyService&methods=randomRaffle,queryRaffleAwardList,strategyArmory,queryRaffleStrategyRuleWeight&pid=88140&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923743925&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:46.030 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=88140&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923745574&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:46.489 [Dubbo-framework-registry-notification-2-thread-1] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/com.lym.trigger.api.IRaffleActivityService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&interface=com.lym.trigger.api.IRaffleActivityService&methods=queryUserActivityAccount,creditPayExchangeSku,querySkuProductListByActivityId,queryUserCreditAccount,armory,calendarSignRebate,draw,isCalendarSignRebate&pid=88140&qos.enable=false&release=3.0.9&revision=1.0&service-name-mapping=true&side=provider&timestamp=1773923745574&version=1.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:35:46.555 [main            ] WARN  NacosRegistry          -  [DUBBO] Ignore empty notify urls for subscribe url provider://192.168.181.1:20880/org.apache.dubbo.metadata.MetadataService?anyhost=true&application=big-market&application.version=1.0&background=false&bind.ip=192.168.181.1&bind.port=20880&category=configurators&check=false&connections=1&corethreads=2&delay=0&deprecated=false&dubbo=2.0.2&dynamic=true&executes=100&generic=false&getAndListenInstanceMetadata.1.callback=true&getAndListenInstanceMetadata.return=true&getAndListenInstanceMetadata.sent=true&group=big-market&interface=org.apache.dubbo.metadata.MetadataService&methods=getMetadataURL,isMetadataService,getAndListenInstanceMetadata,getExportedURLs,serviceName,version,getSubscribedURLs,getExportedServiceURLs,exportInstanceMetadata,getMetadataInfo,toSortedStrings,getMetadataInfos,getServiceDefinition,getInstanceMetadataChangedListenerMap&pid=88140&qos.enable=false&register=false&release=3.0.9&revision=3.0.9&service-name-mapping=true&side=provider&threadpool=cached&threads=100&timestamp=1773923746159&version=1.0.0, dubbo version: 3.0.9, current host: 192.168.181.1
+26-03-19.20:36:16.912 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Client session timed out, have not heard from server in 22360ms for session id 0x100035556600005
+26-03-19.20:36:16.925 [main-SendThread(175.178.182.172:2181)] WARN  ClientCnxn             - Session 0x100035556600005 for sever 175.178.182.172/175.178.182.172:2181, Closing socket connection. Attempting reconnect except it is a SessionExpiredException.
+org.apache.zookeeper.ClientCnxn$SessionTimeoutException: Client session timed out, have not heard from server in 22360ms for session id 0x100035556600005
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1230)
+26-03-19.20:36:35.046 [Curator-ConnectionStateManager-0] WARN  ConnectionStateManager - Session timeout has elapsed while SUSPENDED. Injecting a session expiration. Elapsed ms: 18008. Adjusted session timeout ms: 18000
+26-03-19.20:36:35.057 [main-EventThread] WARN  ConnectionState        - Session expired event received
+26-03-19.20:37:11.240 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] WARN  AwardRepository        - 更新中奖记录，重复更新拦截 userId:xiaofuge giveOutPrizesAggregate:{"userAwardRecordEntity":{"awardId":101,"awardState":"complete","userId":"xiaofuge"},"userCreditAwardEntity":{"creditAmount":59.7,"userId":"xiaofuge"},"userId":"xiaofuge"}
+26-03-19.20:37:38.430 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_model
+26-03-19.20:56:11.239 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] WARN  AwardRepository        - 更新中奖记录，重复更新拦截 userId:xiaofuge giveOutPrizesAggregate:{"userAwardRecordEntity":{"awardId":101,"awardState":"complete","userId":"xiaofuge"},"userCreditAwardEntity":{"creditAmount":40.4,"userId":"xiaofuge"},"userId":"xiaofuge"}
+26-03-19.21:00:12.420 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-03-19.21:00:15.068 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-03-19.21:05:30.403 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@201fee56 (Communications link failure
+
+The last packet successfully received from the server was 1,782,690 milliseconds ago. The last packet sent successfully to the server was 1,782,744 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:30.427 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1fa68d42 (Communications link failure
+
+The last packet successfully received from the server was 1,781,084 milliseconds ago. The last packet sent successfully to the server was 1,781,133 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:30.448 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7298f3e1 (Communications link failure
+
+The last packet successfully received from the server was 1,778,911 milliseconds ago. The last packet sent successfully to the server was 1,778,966 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:30.471 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@41d48b1e (Communications link failure
+
+The last packet successfully received from the server was 1,778,366 milliseconds ago. The last packet sent successfully to the server was 1,778,421 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:30.495 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1ee6b02c (Communications link failure
+
+The last packet successfully received from the server was 1,777,815 milliseconds ago. The last packet sent successfully to the server was 1,777,870 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:30.515 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3501e22f (Communications link failure
+
+The last packet successfully received from the server was 1,777,276 milliseconds ago. The last packet sent successfully to the server was 1,777,329 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:30.538 [pool-9-thread-9 ] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@b31895 (Communications link failure
+
+The last packet successfully received from the server was 1,776,729 milliseconds ago. The last packet sent successfully to the server was 1,776,783 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:41.339 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@7be1918d (Communications link failure
+
+The last packet successfully received from the server was 1,794,702 milliseconds ago. The last packet sent successfully to the server was 1,794,760 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:41.361 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@53f90a11 (Communications link failure
+
+The last packet successfully received from the server was 1,792,523 milliseconds ago. The last packet sent successfully to the server was 1,792,579 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:41.671 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2dff2aff (Communications link failure
+
+The last packet successfully received from the server was 1,791,711 milliseconds ago. The last packet sent successfully to the server was 1,791,766 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:42.297 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5ae5ab34 (Communications link failure
+
+The last packet successfully received from the server was 1,790,613 milliseconds ago. The last packet sent successfully to the server was 1,790,668 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:42.321 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@519e9f36 (Communications link failure
+
+The last packet successfully received from the server was 1,790,072 milliseconds ago. The last packet sent successfully to the server was 1,790,128 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:42.343 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4aacbe96 (Communications link failure
+
+The last packet successfully received from the server was 1,789,528 milliseconds ago. The last packet sent successfully to the server was 1,789,585 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:42.368 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1e50ddee (Communications link failure
+
+The last packet successfully received from the server was 1,788,982 milliseconds ago. The last packet sent successfully to the server was 1,789,038 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:05:42.431 [pool-9-thread-13] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@691b791b (Communications link failure
+
+The last packet successfully received from the server was 1,788,483 milliseconds ago. The last packet sent successfully to the server was 1,788,538 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:06:16.221 [http-nio-8091-exec-42] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-45] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-43] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-2] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-44] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-49] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-48] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-3] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-1] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-34] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-39] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-50] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-40] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-47] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-37] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-38] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-35] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-41] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-36] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:06:16.221 [http-nio-8091-exec-46] WARN  DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public com.lym.types.model.Response<com.lym.trigger.api.dto.ActivityDrawResponseDTO> com.lym.trigger.http.RaffleActivityController.draw(com.lym.trigger.api.dto.ActivityDrawRequestDTO)]
+26-03-19.21:07:00.209 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] WARN  AwardRepository        - 更新中奖记录，重复更新拦截 userId:xiaofuge giveOutPrizesAggregate:{"userAwardRecordEntity":{"awardId":101,"awardState":"complete","userId":"xiaofuge"},"userCreditAwardEntity":{"creditAmount":63.0,"userId":"xiaofuge"},"userId":"xiaofuge"}
+26-03-19.21:07:00.598 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] ERROR AwardService           - 分发奖品，对应的服务不存在。awardKey:openai_use_count
+26-03-19.21:07:00.609 [http-nio-8091-exec-24] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@66d8e999 (Communications link failure
+
+The last packet successfully received from the server was 1,790,652 milliseconds ago. The last packet sent successfully to the server was 1,790,704 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:07:01.878 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@c327d80 (Communications link failure
+
+The last packet successfully received from the server was 1,789,150 milliseconds ago. The last packet sent successfully to the server was 1,789,206 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:07:01.934 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] WARN  PoolBase               - Retail_HikariCP - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6271888e (Communications link failure
+
+The last packet successfully received from the server was 1,787,544 milliseconds ago. The last packet sent successfully to the server was 1,787,599 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
+26-03-19.21:07:02.359 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#3-1] WARN  AwardRepository        - 更新中奖记录，重复更新拦截 userId:xiaofuge giveOutPrizesAggregate:{"userAwardRecordEntity":{"awardId":101,"awardState":"complete","userId":"xiaofuge"},"userCreditAwardEntity":{"creditAmount":50.2,"userId":"xiaofuge"},"userId":"xiaofuge"}
