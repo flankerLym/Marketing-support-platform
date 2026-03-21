@@ -1,0 +1,8 @@
+version: '3'
+services:
+  big-market-app:
+    build: .
+    ports:
+      - "8091:8091"  # 假设你的项目端口是 8091，改成你实际的
+    environment:
+      JAVA_OPTS: "-Xms512m -Xmx512m"

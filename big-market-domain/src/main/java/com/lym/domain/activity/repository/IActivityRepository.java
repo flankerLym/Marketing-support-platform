@@ -69,5 +69,7 @@ public interface IActivityRepository {
     BigDecimal queryUserCreditAccountAmount(String userId);
 
 
+    List<Long> querySkuList();
 
+    ActivitySkuStockKeyVO takeQueueValue(Long sku);
 }

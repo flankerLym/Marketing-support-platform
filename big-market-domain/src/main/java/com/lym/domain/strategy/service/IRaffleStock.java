@@ -20,4 +20,5 @@ public interface IRaffleStock {
      */
     void updateStrategyAwardStock(Long strategyId, Integer awardId);
 
+    StrategyAwardStockKeyVO takeQueueValue(Long strategyId, Integer awardId) throws InterruptedException;
 }

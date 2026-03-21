@@ -2,6 +2,8 @@ package com.lym.domain.activity.service;
 
 import com.lym.domain.activity.model.valobj.ActivitySkuStockKeyVO;
 
+import java.util.List;
+
 /**
  * @author Fuzhengwei bugstack.cn @小傅哥
  * @description 活动sku库存处理接口
@@ -16,6 +18,7 @@ public interface IRaffleActivitySkuStockService {
      * @throws InterruptedException 异常
      */
     ActivitySkuStockKeyVO takeQueueValue() throws InterruptedException;
+    ActivitySkuStockKeyVO takeQueueValue(Long sku) throws InterruptedException;
 
     /**
      * 清空队列
@@ -36,4 +39,6 @@ public interface IRaffleActivitySkuStockService {
      */
     void clearActivitySkuStock(Long sku);
 
+
+    List<Long> querySkuList();
 }

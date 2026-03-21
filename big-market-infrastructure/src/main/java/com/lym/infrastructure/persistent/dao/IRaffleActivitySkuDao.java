@@ -21,4 +21,6 @@ public interface IRaffleActivitySkuDao {
     void clearActivitySkuStock(Long sku);
 
     List<RaffleActivitySku> queryActivitySkuListByActivityId(Long activityId);
+
+    List<Long> querySkuList();
 }
